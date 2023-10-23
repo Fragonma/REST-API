@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 15-10-2023 a las 21:41:20
+-- Tiempo de generación: 23-10-2023 a las 20:29:17
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -28,7 +28,7 @@ USE `rest-api`;
 --
 -- Estructura de tabla para la tabla `Libros`
 --
--- Creación: 14-10-2023 a las 21:51:22
+-- Creación: 20-10-2023 a las 18:53:29
 --
 
 CREATE TABLE `Libros` (
@@ -36,7 +36,7 @@ CREATE TABLE `Libros` (
   `nombre` varchar(30) NOT NULL,
   `autor` varchar(30) NOT NULL,
   `categoria` varchar(30) NOT NULL,
-  `año-publicacion` date NOT NULL,
+  `año_publicacion` date NOT NULL,
   `ISBN` varchar(13) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -44,12 +44,12 @@ CREATE TABLE `Libros` (
 -- Volcado de datos para la tabla `Libros`
 --
 
-INSERT INTO `Libros` (`id`, `nombre`, `autor`, `categoria`, `año-publicacion`, `ISBN`) VALUES
+INSERT INTO `Libros` (`id`, `nombre`, `autor`, `categoria`, `año_publicacion`, `ISBN`) VALUES
 (1, 'El corazón de la piedra', 'José María García López', 'Ficcion', '2013-01-20', '9788493975074'),
 (2, 'El principito', 'Antoine de Saint-Exupéry', 'Fábula', '1943-04-06', '9783140464079'),
 (3, 'Cometas en el Cielo', 'Khaled Hosseini', 'Drama', '2003-05-29', '9788478888856'),
 (4, 'El Codigo Da Vinci ', 'Dan Brown', 'Misterio', '2003-03-18', '9788408096146'),
-(5, 'Don Quijote de la Mancha', 'Miguel de Cervantes', 'Sátira', '1605-01-16', '9788408061052');
+(5, 'Don Quijote de la Mancha', 'Miguel de Cervantes', 'Parodia', '1605-01-16', '9788408061052');
 
 --
 -- Índices para tablas volcadas
@@ -69,7 +69,7 @@ ALTER TABLE `Libros`
 -- AUTO_INCREMENT de la tabla `Libros`
 --
 ALTER TABLE `Libros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
